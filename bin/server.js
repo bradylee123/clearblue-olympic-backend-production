@@ -20,7 +20,7 @@ const app = express();
 var server = http.createServer(app);
 
 app.use(bodyParser.json());
-app.use(cors({ origin: 'https://clearblue-olympic-live.herokuapp.com/' }));
+app.use(cors({ origin: 'https://clearblue-olympic-live.herokuapp.com' }));
 
 app.use('/goldMedal', goldMedalRouter);
 app.use('/silverMedal', silverMedalRouter);
