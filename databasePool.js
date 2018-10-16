@@ -5,7 +5,9 @@ var config = {
   database: process.env.DATABASE,
   password: process.env.PASSWORD,
   host: process.env.HOST,
-  port: process.env.DBPORT
+  port: process.env.PORT,
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
 };
 
 const pool = new Pool(config);

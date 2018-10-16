@@ -3,7 +3,7 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const port = process.env.PORT || 5000;
+const port = process.env.SERVER_PORT || 5000;
 
 const goldMedalRouter = require('../api/gold_medal');
 const silverMedalRouter = require('../api/silver_medal');
